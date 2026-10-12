@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="小売・アパレル週報の個人用自動配信の仕組みを説明します。">
+<title>小売・アパレル週報 自動配信</title>
+<style>
+:root{color-scheme:light;--ink:#1f2937;--muted:#596579;--accent:#194d63;--paper:#f4f7f6;--line:#dce5e3}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.8 system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif}header{background:linear-gradient(130deg,#173b4d,#26726b);color:white;padding:4rem max(1.3rem,calc((100% - 920px)/2)) 3rem}header p{color:#d8e8e7;max-width:48rem}nav{background:white;border-bottom:1px solid var(--line);padding:.8rem max(1.3rem,calc((100% - 920px)/2));display:flex;gap:1.3rem;flex-wrap:wrap}a{color:var(--accent)}nav a{font-weight:650;text-decoration:none}main{max-width:920px;margin:2.2rem auto;padding:0 1.3rem}section{background:white;border:1px solid var(--line);border-radius:14px;padding:1.4rem 1.7rem;margin:1rem 0;box-shadow:0 6px 20px #173b4d0a}h1{font-size:clamp(2rem,5vw,3.25rem);line-height:1.25;margin:.2rem 0 1rem}h2{margin:.2rem 0 .6rem;color:var(--accent)}footer{max-width:920px;margin:auto;padding:1rem 1.3rem 2rem;color:var(--muted);font-size:.9rem}.badge{display:inline-block;background:#e3f1ef;color:#174f50;border-radius:999px;padding:.15rem .7rem;font-weight:700;font-size:.85rem}
+</style>
+</head><body>
+<header><span class="badge">個人利用・情報ページ</span><h1>小売・アパレル週報<br>自動配信</h1><p>公開されている公式情報を集め、週次のExcel・PDFレポートを所有者宛てにメール配信する仕組みの概要です。レポート本体や収集データをこのサイトで公開することはありません。</p></header>
+<nav aria-label="サイトナビゲーション"><a href="./">ホーム</a><a href="privacy.html">プライバシー</a><a href="terms.html">利用条件</a></nav>
+<main>
+<section><h2>週報の配信</h2><p>公開情報をもとに週次レポートを作成し、ExcelとPDFを所有者宛てにメールで送ります。定期実行にはGitHub Actionsを使います。取得状況や出典はレポート内で確認できるようにします。</p></section>
+<section><h2>メール権限</h2><p>Google OAuthは <code>gmail.send</code> 権限だけを使います。受信箱、既存メール、連絡先を読む権限はありません。送信済みメールは通常どおり所有者のGmailに保存されます。</p></section>
+<section><h2>情報の確認</h2><p>情報源の更新時期や公表範囲は異なり、取得失敗や原資料の誤りによって情報が欠けたり不正確になったりする可能性があります。重要な数値・予定は、レポートに記載された公式出典を確認してください。</p></section>
+</main><footer>このサイトは個人用の説明ページです。週報の公開配布や第三者への提供は行いません。</footer></body></html>
